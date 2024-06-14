@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import "../cssfile/Navbar.css";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import CallMe from "../public/images/Chtat.png";
+
+import Logo from "../public/images/Logo.png";
 
 import {
   faBars,
@@ -26,7 +29,7 @@ const Navbar = () => {
   
   return (
     <div className="navbar">
-      <img src="./images/logo.png" alt="shoes" className="logo" />
+      <img src={Logo} alt="shoes" className="logo" />
       <h1>
         <button className="dash" onClick={OpenMenu} >
           {element} <span className="home-now">X</span>
@@ -51,7 +54,7 @@ const Navbar = () => {
             <Link to="/logout">{element3} Log-out</Link>
           </li>
         </ul>
-        <img src="./images/chtat.png " alt="chat" className="chat" />
+        <img src={CallMe} alt="chat" className="chat" />
       </h2>
     </div>
   );

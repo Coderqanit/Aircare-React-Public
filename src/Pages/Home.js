@@ -1,5 +1,9 @@
 import React, {  } from "react";
 import "../cssfile/home.css";
+import Frame from "../public/images/Frame.png"
+import Camera from "../public/images/camera.svg";
+
+/* import Frame from "../public/images/Frame.png" */
 
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -19,7 +23,7 @@ const Home = () => {
   return (
     <div className="home">
       {/*  Dash section */}
-     <div className="heading">
+      <div className="heading">
         <h1 className="head">Dashboard</h1>
         <div className="s-bar">
           <div className="search">
@@ -34,7 +38,7 @@ const Home = () => {
             <div className="ok2">
               <p className="user-input">
                 <img
-                  src="/images/img-icon.png"
+                  src={Camera}
                   alt="camera"
                   className="user-home"
                 />
@@ -43,7 +47,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div> 
+      </div>
 
       {/*  <div className="heading">
         <h1 className="head">Dashboard</h1>
@@ -79,7 +83,11 @@ const Home = () => {
             </p>
           </div>
           <div class="wel-img">
-            <img src="/images/Frame.png" alt="hello" className="frame" />
+            <img
+              class="fit-picture"
+              src={Frame}
+              alt=""
+            />
           </div>
         </div>
       </div>

@@ -1,6 +1,7 @@
 import React from 'react'
 import "../cssfile/notification.css"
 import { } from "../Pages/CreateRequest"
+import Camera from "../public/images/camera.svg";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -23,7 +24,7 @@ const Notification = () => {
           <div className="img">
             <p className="user-input">
               <img
-                src="./images/img-icon.png"
+                src={Camera}
                 alt="camera"
                 className="user-home"
               />

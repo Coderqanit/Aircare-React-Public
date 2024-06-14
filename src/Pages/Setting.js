@@ -1,5 +1,6 @@
 import React from 'react'
 import "../cssfile/setting.css"
+import Camera from "../public/images/camera.svg";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -23,7 +24,7 @@ const Setting = () => {
           <div className="img">
             <p className="user-input">
               <img
-                src="./images/img-icon.png"
+                src={Camera}
                 alt="camera"
                 className="user-home"
               />

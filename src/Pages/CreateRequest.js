@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../cssfile/request.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Camera from "../public/images/camera.svg";
 
 import { faEnvelope, faBell } from "@fortawesome/free-solid-svg-icons";
   const element7 =<FontAwesomeIcon icon={faEnvelope} size="2x " color="black" />;
@@ -54,7 +55,7 @@ const CreateRequest = ({ data, handleChange }) => {
           <div className="img">
             <p className="user-input">
               <img
-                src="./images/img-icon.png"
+              src={Camera}
                 alt="camera"
                 className="user-home"
               />
